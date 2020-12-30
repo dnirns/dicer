@@ -1,17 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap');
+
 html {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
-  /* display: flex;
-  flex-direction: column; */
+  background-color: rgb(18, 18, 18);
+  color: white;
+}
+
+.header {
+  margin: 10px;
+  padding: 20px;
 }
 
 button {
   padding: 10px;
   margin: 10px;
   border: none;
-  border-radius: 5px;
   font-size: 1.5em;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.29);
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 button:hover {
@@ -20,6 +36,14 @@ button:hover {
 
 button:active {
   opacity: 0.6;
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .letter-container {
@@ -40,10 +64,13 @@ button:active {
  * Images - Public Domain - https://openclipart.org/detail/105931/sixsided-dice-faces-lio-01
  */
 
+.dice-container {
+  margin: 20px;
+}
 .dice-wrapper {
   display: flex;
   justify-content: center;
-  /* width: 100vw; */
+
   height: 400px;
   align-items: center;
   margin: 50px 0px;
@@ -75,4 +102,85 @@ button:active {
 }
 .dice-6 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' version='1.1' viewBox='0 0 76.5 76.5' height='21.6' width='21.6'%3E%3Cstyle%3E.s0%7Bfill%3A%23000%3Bstroke-width%3A3%3Bstroke%3A%23000%3B%7D%3C%2Fstyle%3E%3Cg transform='translate(86.2%2C-500.6)'%3E%3Cg transform='matrix(0.5%2C0%2C0%2C0.5%2C-98.2%2C356.2)'%3E%3Crect x='25.5' y='290.4' width='150' height='150' ry='50' rx='50' style='fill%3A%23fff%3Bstroke-width%3A3%3Bstroke%3A%23000'%2F%3E%3Ccircle transform='translate(-261%2C101.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3Ccircle transform='translate(-261%2C173.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3Ccircle transform='translate(-261%2C137.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3Ccircle transform='translate(-189%2C101.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3Ccircle transform='translate(-189%2C173.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3Ccircle transform='translate(-189%2C137.5)' cx='325' cy='227.4' r='12.5' class='s0'%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+/* * Hover.css (http://ianlunn.github.io/Hover/)
+* Version: 2.3.2
+* Author: Ian Lunn @IanLunn
+* Author URL: http://ianlunn.co.uk/
+* Github: https://github.com/IanLunn/Hover
+* Hover.css Copyright Ian Lunn 2017. Generated with Sass. */
+
+/* 2D TRANSITIONS */
+/* Grow */
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Rotate */
+
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover,
+.hvr-rotate:focus,
+.hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }

@@ -34,16 +34,16 @@ const Dice = () => {
   }
 
   return (
-    <>
-      <button onClick={() => rollOneDice(1, 6)}>Roll 1 Dice</button>
-      <button onClick={() => rollTwoDice(1, 6)}>Roll 2 Dice</button>
+    <div className='dice-container'>
+      <button className='hvr-grow' onClick={() => rollOneDice(1, 6)}>Roll 1 Dice</button>
+      <button className='hvr-grow' onClick={() => rollTwoDice(1, 6)}>Roll 2 Dice</button>
 
       <div className='dice-wrapper'>
         {dice1 && <div class={`dice dice-${dice1} ${bounce}`} />}
 
         {dice2 && dice1 && <div class={`dice dice-${dice2} ${bounce}`} />}
       </div>
-    </>
+    </div>
   )
 }
 
