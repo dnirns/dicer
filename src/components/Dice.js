@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Dice = () => {
-  const [dice1, setDice1] = useState(null)
+  const [dice1, setDice1] = useState(1)
   const [dice2, setDice2] = useState(null)
   const [bounce, setBounce] = useState('')
 

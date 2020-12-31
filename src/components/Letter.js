@@ -20,9 +20,11 @@ const Letter = () => {
     <>
       <div className='letter-container '>
         <button className='hvr-grow' onClick={letterGenerator}>
-          Pick a Random Letter
+          Get a Random Letter
         </button>
-        <h1 className={`letter ${bounce}`}>{letter}</h1>
+
+          <h1 className={`letter ${bounce}`}>{letter}</h1>
+
       </div>
     </>
   )
