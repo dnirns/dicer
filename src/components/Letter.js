@@ -20,7 +20,7 @@ const Letter = () => {
     <>
       <div className='letter-container '>
         <button className='hvr-grow' onClick={letterGenerator}>
-          Get a Random Letter
+          Get a Letter
         </button>
 
           <h1 className={`letter ${bounce}`}>{letter}</h1>

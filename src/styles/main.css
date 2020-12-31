@@ -52,7 +52,6 @@ button:active {
 }
 
 .letter-container {
-  flex-direction: column;
   margin: 50px;
 }
 
