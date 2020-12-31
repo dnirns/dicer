@@ -6,7 +6,6 @@ import {
   Box,
   IconButton,
   Slide,
-  Button,
   useScrollTrigger,
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -25,9 +24,10 @@ const HideOnScroll = ({ children, window }) => {
 
 const useStyles = makeStyles({
   root: {
-    background: 'rgb(18, 18, 18)',
+    background: '#5555553e',
     boxShadow: 'none',
     display: 'flex',
+
     alignItems: 'center',
   },
   icon: {
@@ -36,7 +36,8 @@ const useStyles = makeStyles({
   menuLink: {
     fontFamily: 'Work Sans',
     color: 'white',
-    padding: 10,
+    fontSize: '.9em',
+    background: 'none',
   },
 })
 
@@ -56,13 +57,13 @@ const NavBar = () => {
           </Box>
           <Box display={{ xs: 'block', sm: 'block', md: 'block' }}>
             <Link to='/'>
-              <Button className={classes.menuLink}>Home</Button>
+              <button className={classes.menuLink}>Home</button>
             </Link>
             <Link to='/roll-dice'>
-              <Button className={classes.menuLink}>Roll Dice</Button>
+              <button className={classes.menuLink}>Roll Dice</button>
             </Link>
             <Link to='/random-letter'>
-              <Button className={classes.menuLink}>Pick a Letter</Button>
+              <button className={classes.menuLink}>Pick a Letter</button>
             </Link>
           </Box>
 
