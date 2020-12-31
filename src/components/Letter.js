@@ -7,6 +7,7 @@ const Letter = () => {
   const letterGenerator = () => {
     const startTime = new Date().getTime()
     setBounce('')
+    setLetter('')
     const interval = setInterval(() => {
       if (new Date().getTime() - startTime > 1200) {
         clearInterval(interval)

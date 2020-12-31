@@ -53,6 +53,7 @@ button:active {
 
 .letter-container {
   margin: 50px;
+  height: 60vh;
 }
 
 .letter {
