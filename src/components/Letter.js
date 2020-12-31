@@ -23,9 +23,9 @@ const Letter = () => {
         <button className='hvr-grow' onClick={letterGenerator}>
           Get a Letter
         </button>
-
+        <div>
           <h1 className={`letter ${bounce}`}>{letter}</h1>
-
+        </div>
       </div>
     </>
   )

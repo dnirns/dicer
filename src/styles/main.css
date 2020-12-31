@@ -52,12 +52,13 @@ button:active {
 }
 
 .letter-container {
-  margin: 50px;
-  height: 60vh;
+  padding: 50px;
+  height: 400px;
 }
 
 .letter {
   font-size: 18em;
+  /* margin: 10px; */
 }
 
 /*
