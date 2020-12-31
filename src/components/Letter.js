@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Letter = () => {
-  const [letter, setLetter] = useState('')
+  const [letter, setLetter] = useState('?')
   const [bounce, setBounce] = useState('')
 
   const letterGenerator = () => {

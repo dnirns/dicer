@@ -53,6 +53,7 @@ button:active {
 
 .letter-container {
   flex: 1;
+  height: 100%;
   flex-direction: column;
   margin: 10px;
   padding: 20px;
@@ -68,19 +69,18 @@ button:active {
  * Images - Public Domain - https://openclipart.org/detail/105931/sixsided-dice-faces-lio-01
  */
 
-.dice-container {
-}
+
 .dice-wrapper {
   display: flex;
   justify-content: center;
   flex: 1;
-  /* height: 400px; */
+
   align-items: center;
   margin-top: 50px;
 }
 .dice {
   display: flex;
-  /* margin-top: 100px; */
+
   width: 200px;
   height: 200px;
   max-width: 250px;
