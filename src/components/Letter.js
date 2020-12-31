@@ -7,7 +7,7 @@ const Letter = () => {
   const letterGenerator = () => {
     const startTime = new Date().getTime()
     setBounce('')
-    setLetter('')
+    // setLetter('')
     const interval = setInterval(() => {
       if (new Date().getTime() - startTime > 1200) {
         clearInterval(interval)
@@ -23,10 +23,10 @@ const Letter = () => {
         <button className='hvr-grow' onClick={letterGenerator}>
           Get a Letter
         </button>
-        <div>
+      
           <h1 className={`letter ${bounce}`}>{letter}</h1>
         </div>
-      </div>
+
     </>
   )
 }
