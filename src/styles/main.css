@@ -52,15 +52,12 @@ button:active {
 }
 
 .letter-container {
-  flex: 1;
-  height: 100%;
   flex-direction: column;
-  margin: 10px;
-  padding: 20px;
+  margin: 50px;
 }
 
 .letter {
-  font-size: 20em;
+  font-size: 18em;
 }
 
 /*
@@ -68,7 +65,6 @@ button:active {
  * Code - MIT License - https://github.com/diafygi/dice-css
  * Images - Public Domain - https://openclipart.org/detail/105931/sixsided-dice-faces-lio-01
  */
-
 
 .dice-wrapper {
   display: flex;
