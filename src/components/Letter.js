@@ -19,10 +19,12 @@ const Letter = () => {
   }
   return (
     <>
-      <div className='letter-container '>
-        <button className='hvr-grow' onClick={letterGenerator}>
-          Get a Letter
-        </button>
+      <div className='container '>
+        <div className='button-container'>
+          <button className='hvr-grow' onClick={letterGenerator}>
+            Get a Letter
+          </button>
+        </div>
 
         <h2 className={`letter ${bounce}`}>{letter}</h2>
       </div>

@@ -1,20 +1,20 @@
+import { BrowserRouter, Route } from 'react-router-dom'
+
+import Home from './components/Home'
 import Dice from './components/Dice'
 import Letter from './components/Letter'
+import Nav from './components/Nav'
 
 const App = () => {
   return (
-    <div>
-      <div className='header'>
-        <h1 className='title'>DICER</h1>
-        <h3>A simple tool kit for playing group games on Zoom</h3>
-        <p style={{ fontSize: '.8em' }}>
-          (<em>other video conferencing software may be avalaible</em>)
-        </p>
-      </div>
-
-      <Dice />
-      <Letter />
-    </div>
+    <>
+      <BrowserRouter>
+        <Nav />
+        <Route path='/' component={Home} exact />
+        <Route path='/roll-dice' component={Dice} />
+        <Route path='/random-letter' component={Letter} />
+      </BrowserRouter>
+    </>
   )
 }
 

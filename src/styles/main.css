@@ -9,29 +9,35 @@ html {
   color: white;
 }
 
-.header {
-  margin: 10px;
-  padding: 20px;
+.container {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
+  justify-self: flex-start;
   font-size: 4em;
 }
 
+.button-container {
+  margin: 30px;
+}
+
 button {
-  padding: 10px;
-  margin: 10px;
   border: none;
-  font-size: 1.3em;
+  font-size: 1.2em;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.208);
+  padding: 12px;
+  margin: 10px;
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.29);
   border-radius: 5px;
   font-family: 'Work Sans', sans-serif;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 button:hover {
@@ -50,38 +56,25 @@ button:active {
   animation-iteration-count: 1;
 }
 
-.letter-container {
-  margin-top: 50px;
-}
-
 .letter {
   font-size: 20em;
   margin: 0;
 }
 
-/*
- * Dice.css v1.0
- * Code - MIT License - https://github.com/diafygi/dice-css
- * Images - Public Domain - https://openclipart.org/detail/105931/sixsided-dice-faces-lio-01
- */
-
 .dice-wrapper {
   display: flex;
   justify-content: center;
-  flex: 1;
-
   align-items: center;
   margin-top: 50px;
 }
 .dice {
   display: flex;
-
-  width: 200px;
+  width: 40vw;
   height: 200px;
   max-width: 250px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 20px;
+  margin: 15px;
 }
 
 .dice-1 {

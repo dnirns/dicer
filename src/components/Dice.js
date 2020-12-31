@@ -34,9 +34,15 @@ const Dice = () => {
   }
 
   return (
-    <div className='dice-container'>
-      <button className='hvr-grow' onClick={() => rollOneDice(1, 6)}>Roll 1 Dice</button>
-      <button className='hvr-grow' onClick={() => rollTwoDice(1, 6)}>Roll 2 Dice</button>
+    <div className='container'>
+      <div className='button-container'>
+        <button className='hvr-grow' onClick={() => rollOneDice(1, 6)}>
+          Roll 1 Dice
+        </button>
+        <button className='hvr-grow' onClick={() => rollTwoDice(1, 6)}>
+          Roll 2 Dice
+        </button>
+      </div>
 
       <div className='dice-wrapper'>
         {dice1 && <div class={`dice dice-${dice1} ${bounce}`} />}
