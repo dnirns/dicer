@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Button from '@material-ui/core/Button'
 import TimerMenu from './TimerMenu'
 import alarm from '../assets/alarm.wav'
 
 const Timer = () => {
   const [startTime, setStartTime] = useState(60000)
-  const [time, setTime] = useState(5000)
+  const [time, setTime] = useState(60000)
   const [timerOn, setTimerOn] = useState(false)
   const [showReset, setShowReset] = useState(false)
 

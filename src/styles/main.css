@@ -214,7 +214,7 @@ button:active {
     opacity: 0;
   }
   50% {
-    color: red;
+    color: rgb(155, 249, 200);
     opacity: 100;
   }
   100% {

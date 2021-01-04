@@ -65,6 +65,9 @@ const NavBar = () => {
             <Link to='/random-letter'>
               <button className={classes.menuLink}>Pick a Letter</button>
             </Link>
+            <Link to='/timer'>
+              <button className={classes.menuLink}>Timer</button>
+            </Link>
           </Box>
 
           <Box className={classes.icon}></Box>
