@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap');
 
+html {
+  height: 100%;
+}
+
 html,
 body {
   font-family: 'Work Sans', sans-serif;
@@ -11,9 +15,32 @@ body {
   margin: 0px;
 }
 
-.container {
-  min-height: 60vh;
+p {
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(199, 252, 225);
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.footer {
   display: flex;
+  flex-direction: column;
+  height: 12vh;
+  justify-content: flex-end;
+  font-size: .9em;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -38,7 +65,6 @@ button {
   padding: 10px 14px;
   margin: 10px;
   color: white;
-  /* border-radius: 5px; */
   font-family: 'Work Sans', sans-serif;
   transform: perspective(1px) translateZ(0);
 }
