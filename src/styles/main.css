@@ -180,6 +180,9 @@ button:active {
   animation-iteration-count: 1;
 }
 
+.drawer {
+  background-color: #222222;
+}
 
 /* Timer Styles */
 
@@ -205,12 +208,11 @@ button:active {
 }
 
 .time-flashing {
-  animation: flashing .8s infinite;
+  animation: flashing 0.8s infinite;
 }
 
 @keyframes flashing {
   0% {
-
     opacity: 0;
   }
   50% {
@@ -218,7 +220,6 @@ button:active {
     opacity: 100;
   }
   100% {
-
     opacity: 0;
   }
 }
