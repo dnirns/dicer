@@ -179,3 +179,46 @@ button:active {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+
+/* Timer Styles */
+
+.timer {
+  display: flex;
+  font-size: 6em;
+  padding: 20px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-buttons {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.time {
+  color: white;
+}
+
+.time-flashing {
+  animation: flashing .8s infinite;
+}
+
+@keyframes flashing {
+  0% {
+
+    opacity: 0;
+  }
+  50% {
+    color: red;
+    opacity: 100;
+  }
+  100% {
+
+    opacity: 0;
+  }
+}
