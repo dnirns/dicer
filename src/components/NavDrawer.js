@@ -16,7 +16,7 @@ import CloseIcon from '@material-ui/icons/Close'
 
 const useStyles = makeStyles({
   root: {
-    background: '#222222',
+    background: '#1f1f1f',
     color: 'white',
     padding: '14px',
     textAlign: 'center',
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   },
   list: {
     width: '100vw',
-    background: '#222222',
+    background: '#1f1f1f',
     color: 'white',
     marginLeft: 'auto',
   },

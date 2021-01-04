@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 const Home = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
+
       <div className='container'>
         <h1 className='title'>DICER</h1>
         <h3>A simple tool kit for playing group games on Zoom</h3>

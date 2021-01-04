@@ -27,7 +27,7 @@ const HideOnScroll = ({ children, window }) => {
 
 const useStyles = makeStyles({
   root: {
-    background: '#222222',
+    background: '#1f1f1f',
     boxShadow: 'none',
     display: 'flex',
     alignItems: 'center',
