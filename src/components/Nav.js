@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 })
 
 const NavBar = () => {
-  const [sideDrawerOpen, setSideDrawerOpen] = useState(true)
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
   const classes = useStyles()
 
   const handleCloseDrawer = () => {
@@ -63,7 +63,7 @@ const NavBar = () => {
             <Box display={{ xs: 'block', sm: 'none', md: 'none' }}>
               <div aria-haspopup='true'>
                 <IconButton className={classes.icon} onClick={() => setSideDrawerOpen(true)} edge='start' color='inherit' aria-label='menu'>
-                  <MenuIcon fontSize='medium' />
+                  <MenuIcon fontSize='large' />
                 </IconButton>
               </div>
             </Box>

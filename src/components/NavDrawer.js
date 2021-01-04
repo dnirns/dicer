@@ -43,7 +43,6 @@ const SideSheet = ({ open, closeDrawer }) => {
   return (
     <>
       <Drawer
-        // className={classes.root}
         anchor='top'
         open={open}
         variant='temporary'
